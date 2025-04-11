@@ -1,0 +1,113 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.searchContainer {
+  width: 100%;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.searchBar {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: white;
+  transition: all 0.2s;
+}
+
+.searchBarActive {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 0;
+}
+
+.searchInputWrapper {
+  position: relative;
+}
+
+.searchInput {
+  width: 100%;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: transparent;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.resultsContainer {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.statusGroup {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.statusGroup:last-child {
+  border-bottom: 0;
+}
+
+.statusHeader {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9fafb;
+}
+
+.statusHeader:hover {
+  background-color: #f3f4f6;
+  transition: background-color 0.2s;
+}
+
+.statusTitle {
+  font-weight: 500;
+  color: #374151;
+}
+
+.statusIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #6b7280;
+}
+
+.itemsList {
+  border-top: 1px solid #f3f4f6;
+}
+
+.emptyMessage {
+  text-align: center;
+  color: #6b7280;
+  padding: 2rem 0;
+}
